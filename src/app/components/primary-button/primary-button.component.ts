@@ -11,8 +11,4 @@ export class PrimaryButtonComponent {
 
   btnClicked = output();
 
-  handleButtonClick() {
-    this.btnClicked.emit();
-  }
-
 }
