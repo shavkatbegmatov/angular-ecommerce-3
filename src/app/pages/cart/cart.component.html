@@ -3,4 +3,5 @@
     @for (item of cartService.cart(); track item.id) {
         <app-cart-item [item]="item" />
     }
+    <app-order-summary />
 </div>

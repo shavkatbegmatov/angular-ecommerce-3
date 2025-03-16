@@ -1,0 +1,28 @@
+<div class="bg-slate-100 p-6 rounded-xl shadow-xl border">
+    <h2 class="text-2xl">Order Summary</h2>
+    <div class="flex flex-col gap-4">
+        <div class="flex gap-4">
+            <span class="text-lg">Total</span>
+            <span class="text-lg font-bold">{{ '$' + total() }}</span>
+        </div>
+
+        <!-- <div class="flex justify-between">
+            <span>Subtotal</span>
+            <span>{{ cartService.subtotal() | currency }}</span>
+        </div>
+        <div class="flex justify-between">
+            <span>Shipping</span>
+            <span>{{ cartService.shipping() | currency }}</span>
+        </div>
+        <div class="flex justify-between">
+            <span>Tax</span>
+            <span>{{ cartService.tax() | currency }}</span>
+        </div>
+        <div class="flex justify-between">
+            <span>Total</span>
+            <span>{{ cartService.total() | currency }}</span>
+        </div> -->
+
+        <app-primary-button label="Proceed to checkout" />
+    </div>
+</div>

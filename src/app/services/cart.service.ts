@@ -23,28 +23,13 @@ export class CartService {
     },
   ]);
 
-  /**
-   * Adds a product to the shopping cart.
-   * This method updates the cart signal by adding the specified product to the existing cart items.
-   * 
-   * @param product - The product object to be added to the cart
-   * @returns void - This method doesn't return a value
-   */
   addToCart(product: Product) {
     this.cart.set([...this.cart(), product]);
   }
 
-  /**
-   * Removes a product from the shopping cart.
-   * This method updates the cart signal by filtering out the product with the specified ID.
-   * 
-   * @param id - The unique identifier of the product to be removed from the cart
-   * @returns void - This method doesn't return a value
-   */
   removeFromCart(id: number) {
     this.cart.set(this.cart().filter(p => p.id !== id));
   }
-
 
   constructor() { }
 }
