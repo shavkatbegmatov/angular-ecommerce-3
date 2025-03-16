@@ -21,7 +21,9 @@
   },
   "defaultBase": "master",
   "namedInputs": {
-    "sharedGlobals": [],
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ],
     "default": [
       "{projectRoot}/**/*",
       "sharedGlobals"
